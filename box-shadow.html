@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>box-shadow</title>
+	<style type="text/css">
+		.shadow-inset  {
+			width:  100px;
+			height:  100px;
+			border:  1px solid black;
+			box-shadow:  2px 2px 5px blue inset;
+		}
+
+		.shadow-outset  {
+			width:  100px;
+			height:  100px;
+			border:  1px solid black;
+			box-shadow:  2px 2px 5px blue;
+		}
+
+		.shadow-multi  {
+			width:  100px;
+			height:  100px;
+			border:  1px solid black;
+			box-shadow:  2px 2px 5px blue,2px 2px 5px blue inset;
+		}
+	</style>
+</head>
+<body>
+	<div class="shadow-inset"></div>
+	<div class="shadow-outset"></div>
+	<div class="shadow-multi"></div>
+</body>
+</html>
