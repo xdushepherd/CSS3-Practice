@@ -1,0 +1,26 @@
+/*set the background color of the body*/
+body	{	
+		background:  #000;	
+}
+
+
+/*set the style of the h1 tag*/
+h1	{
+		text-align:   center;
+		color:   black;
+		font-size:  48px;
+		font-family:   'Fruktur' , cursive;
+		text-shadow:  1px  1px 1px #ccc,0 0 10px #fff,0 0 20px #fff,0 0 30px #fff,0 0 40px #ff00de,0 0 70px #ff00de,0 0 80px #ff00de,0 0 100px #ff00de,0 0 150px #ff00de;
+		-webkit-animation: run  20s  ease-in-out  2s 1;
+}
+
+
+/* assign the keyframes */
+@-webkit-keyframes run {
+	 0% {  transform:rotateX(-5deg) rotateY(0);}
+               50% {
+               	 transform:rotateX(0) rotateY(180deg);	
+		 text-shadow: 1px  1px 1px #ccc,0 0 10px #fff,0 0 20px #fff,0 0 30px #fff,0 0 40px #3EFF3E,0 0 70px #3EFFff,0 0 80px #3EFFff,0 0 100px #3EFFee,0 0 150px #3EFFee;     
+               }
+               100% {transform:rotateX(5deg) rotateY(360deg);}
+}
