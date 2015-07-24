@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>结构性伪类选择器—not</title>
+<style type="text/css">
+	div{
+	  padding: 10px 20px;
+	  min-height: 50px;
+	}
+	div:not([id="footer"]){
+	  background: orange;
+	}
+</style>
+</head> 
+<body>
+    <div id="header">页头</div>
+    <div id="page">页体</div>
+    <div id="footer">页脚</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>属性选择器</title>
+<style type="text/css">
+  form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin: 30px auto;
+  }
+  .wrapper {
+    margin-bottom: 10px;
+  }
+  .box {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    position: relative;
+    background: orange;
+    vertical-align: middle;
+    border-radius: 100%;
+  }
+  .box input {
+    opacity: 0;
+    position: absolute;
+    top:-3px;
+    left:-4px;
+    width: 30px;
+    height:30px;
+   
+  }
+
+  .box span { 
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    background: #fff;
+    top: 50%;
+    left:50%;
+    margin: -5px 0  0 -5px;
+    z-index:1;
+  }
+
+  input[type="radio"] + span {
+    opacity: 0;
+
+  }
+  input[type="radio"]:checked + span {
+    opacity: 1;
+  }
+</style>
+</head> 
+<body>
+<form action="#">
+  <div class="wrapper">
+    <div class="box">
+      <input type="radio" checked="checked"  id="boy" name="1" /><span></span>
+    </div>
+    <lable for="boy">男</lable>
+  </div>
+  
+  <div class="wrapper">
+    <div class="box">
+      <input type="radio"  id="girl" name="1"  /><span></span>
+    </div>
+    <label for="girl">女</label>
+  </div>
+</form> 
+</body>
+</html>
